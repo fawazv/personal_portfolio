@@ -12,6 +12,15 @@ export async function POST(req: Request) {
       );
     }
 
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      console.warn(
+        '⚠️ EMAIL_USER or EMAIL_PASS environment variables are missing. Mocking successful testimonial submission.\n' +
+        'To configure real email sending, add them to your .env.local file.\n' +
+        `Mocked Testimonial: Name: ${name}, Role: ${role}, Quote: ${quote}`
+      );
+      return NextResponse.json({ message: 'Testimonial submitted successfully (mock mode)' }, { status: 200 });
+    }
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {

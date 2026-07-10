@@ -5,6 +5,15 @@ export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json();
 
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      console.warn(
+        '⚠️ EMAIL_USER or EMAIL_PASS environment variables are missing. Mocking successful email send.\n' +
+        'To configure real email sending, add them to your .env.local file.\n' +
+        `Mocked Message: Name: ${name}, Email: ${email}, Message: ${message}`
+      );
+      return NextResponse.json({ message: 'Email sent successfully (mock mode)' }, { status: 200 });
+    }
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {

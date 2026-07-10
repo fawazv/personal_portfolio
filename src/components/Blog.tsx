@@ -4,26 +4,26 @@ import { motion } from "framer-motion";
 
 const ARTICLES = [
   {
-    title: "From Commerce to Code: My Transition",
-    excerpt: "How I pivoted from a B.Com degree to Full Stack Development in under a year. The challenges, the late nights, and the breakthroughs.",
-    category: "Journey",
-    readTime: "5 min read",
+    title: "Demystifying RAG: Building Context-Grounded Chatbots",
+    excerpt: "How I implemented Retrieval-Augmented Generation (RAG) using LangChain and Vector Databases to achieve 30% higher relevance for domain-specific queries.",
+    category: "AI & ML",
+    readTime: "6 min read",
     color: "from-blue-500 to-cyan-500",
-    link: "#", // Placeholder
+    link: "#",
   },
   {
-    title: "Understanding Microservices Architecture",
-    excerpt: "A deep dive into how I built the Elite Hotel backend using Node.js services, Docker, and RabbitMQ for asynchronous communication.",
-    category: "Tech",
+    title: "Data Ingestion at Scale: Automating Pipelines with Selenium",
+    excerpt: "Overcoming dynamic rendering obstacles during web content ingestion. How we engineered a pipeline that reduced manual work by 70%.",
+    category: "Automation",
     readTime: "8 min read",
     color: "from-purple-500 to-pink-500",
     link: "#",
   },
   {
-    title: "Why I picked Next.js for Nxtcart",
-    excerpt: "Comparing Create React App (CRA) vs Next.js. Why Server Side Rendering (SSR) and SEO mattered for my e-commerce project.",
-    category: "Tech",
-    readTime: "6 min read",
+    title: "Beyond Accuracy: ML Model Evaluation in Python",
+    excerpt: "A practical guide to evaluating classifiers: handling class imbalance, computing precision-recall curves, and setting up clean validation folds.",
+    category: "Machine Learning",
+    readTime: "5 min read",
     color: "from-orange-500 to-red-500",
     link: "#",
   },

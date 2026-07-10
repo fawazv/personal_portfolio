@@ -21,7 +21,7 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: any }) {
             className="absolute inset-0 flex items-center justify-center p-8"
         >
             <div className="text-center">
-                <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-4">Mohammed Fawaz.</h1>
+                <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-4">Dipratna Kamble.</h1>
                 <p className="text-xl md:text-2xl font-light text-gray-300">Full Stack Developer.</p>
             </div>
         </motion.div>

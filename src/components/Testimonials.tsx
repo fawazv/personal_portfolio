@@ -5,28 +5,28 @@ import { useState } from "react";
 
 const TESTIMONIALS = [
   {
-    quote: "Fawaz delivered exceptional code on the Elite Hotel project. His understanding of microservices is top-notch.",
-    name: "Alex Morgan",
-    role: "Project Manager, Elite Hotel",
-    initials: "AM",
+    quote: "Dipratna's RAG chatbot was a game-changer for our enrollment team, resolving hundreds of queries with extremely high accuracy.",
+    name: "Project Director",
+    role: "Sunbeam Infotech Pvt. Ltd.",
+    initials: "SI",
   },
   {
-    quote: "The Nxtcart platform is blazing fast. Fawaz's optimization skills significantly improved our conversion rates.",
-    name: "Sarah Chen",
-    role: "CTO, Nxtcart",
-    initials: "SC",
+    quote: "Excellent skills in Python data automation. The Selenium ingestion pipeline he built saved our database engineers hours of manual content aggregation.",
+    name: "Lead Engineer",
+    role: "Automation Dept, Sunbeam Infotech",
+    initials: "LE",
   },
   {
-    quote: "A true professional. He transformed our messy codebase into a clean, scalable architecture.",
-    name: "David Smith",
-    role: "Lead Dev, TechStart",
-    initials: "DS",
+    quote: "A highly dedicated undergraduate student who understands the math behind Machine Learning and implements it in clean, structured code.",
+    name: "Prof. S. R. Patil",
+    role: "DKTE Engineering Institute",
+    initials: "SP",
   },
   {
-    quote: "Incredible attention to detail. The UI animations he implemented made our app feel world-class.",
-    name: "Emily Davis",
-    role: "Product Designer",
-    initials: "ED",
+    quote: "Beyond core coding, his creative design sense and video editing capabilities make him a uniquely versatile developer.",
+    name: "Creative Lead",
+    role: "Developer Student Club, DKTE",
+    initials: "CD",
   },
 ];
 
