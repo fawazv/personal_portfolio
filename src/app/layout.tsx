@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,9 +8,15 @@ const inter = Inter({
   display: "swap",
 });
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Scrollytelling Portfolio",
-  description: "A cinematic developer portfolio.",
+  title: "Dipratna Ravi Kamble | AI Engineer & Full Stack Developer Portfolio",
+  description: "Ultra-premium cinematic portfolio of Dipratna Ravi Kamble, specializing in Generative AI, RAG Systems, Machine Learning pipelines, and scalable web applications.",
 };
 
 export default function RootLayout({
@@ -20,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} ${outfit.variable} antialiased`}>{children}</body>
     </html>
   );
 }
